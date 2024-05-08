@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mvvm_news_retrofit.view.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/headlineFragment"
+        android:name="com.example.mvvm_news_retrofit.view.HeadlineFragment"
+        android:label="fragment_headline"
+        tools:layout="@layout/fragment_headline" >
+        <action
+            android:id="@+id/action_headlineFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/flolowingFragment"
+        android:name="com.example.mvvm_news_retrofit.view.FlolowingFragment"
+        android:label="fragment_flolowing"
+        tools:layout="@layout/fragment_flolowing" >
+        <action
+            android:id="@+id/action_flolowingFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_flolowingFragment_to_mainActivity2"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsstandFragment"
+        android:name="com.example.mvvm_news_retrofit.view.NewsstandFragment"
+        android:label="fragment_newsstand"
+        tools:layout="@layout/fragment_newsstand" >
+        <action
+            android:id="@+id/action_newsstandFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+</navigation>

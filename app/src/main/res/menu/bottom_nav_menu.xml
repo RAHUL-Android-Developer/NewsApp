@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/foryou"
+        android:title="For you"
+        android:icon="@drawable/for_you"
+        />
+    <item
+        android:id="@+id/HeadLine"
+        android:title="HeadLine"
+        android:icon="@drawable/headline_icon"/>
+    <item
+        android:id="@+id/Following"
+        android:title="Following"
+        android:icon="@drawable/following_ioon"/>
+
+    <item
+        android:id="@+id/newstatsd"
+        android:title="Newsstand"
+        android:icon="@drawable/newsstand_icon"/>
+</menu>
